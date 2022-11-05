@@ -1,0 +1,53 @@
+/* 
+Jack Danielle L. Granada
+Sortest Job First
+*/
+
+unsigned long int previousMillis = 0;
+unsigned long int int1 = 1000;
+unsigned long int int2 = 3000;
+unsigned long int int3 = 5000;
+unsigned long int int4 = 7000;
+unsigned long int int5 = 9000;
+unsigned long int int6 = 11000;
+
+void setup(){
+  
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+
+}
+
+void loop(){
+  unsigned long int currentMillis = millis();
+  
+  if((currentMillis - previousMillis) >= int1){
+  	digitalWrite(13, HIGH);
+  }
+  
+  if((currentMillis - previousMillis) >= int2){
+  	digitalWrite(12, HIGH);
+  }
+  
+  if((currentMillis - previousMillis) >= int3){
+  	digitalWrite(11, HIGH);
+  }
+  
+  if((currentMillis - previousMillis) >= int4){
+  	digitalWrite(10, HIGH);
+  }
+  
+  if((currentMillis - previousMillis) >= int5){
+  	digitalWrite(9, HIGH);
+  }
+  
+  if((currentMillis - previousMillis) >= int6){
+  	digitalWrite(8, HIGH);
+  }
+  
+}

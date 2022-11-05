@@ -1,0 +1,48 @@
+/* 
+Jack Danielle L. Granada
+First In First Out
+*/
+void setup(){
+
+  pinMode(13, OUTPUT);//first led
+  pinMode(12, OUTPUT);//second
+  pinMode(11, OUTPUT);//third
+  pinMode(10, OUTPUT);//fourth
+  pinMode(9, OUTPUT);//fifth
+  pinMode(8, OUTPUT);//sixth
+  
+}
+
+void loop (){
+
+  //first led 3 second delay
+  digitalWrite (13, HIGH);
+  delay (3000);
+  digitalWrite (13, LOW);
+ 
+  //second led 5 second delay  
+  digitalWrite (12, HIGH);
+  delay (9000); 
+  digitalWrite (12, LOW);  
+
+  //third led 7 second delay  
+  digitalWrite (11, HIGH);
+  delay (13000);  
+  digitalWrite (11, LOW);
+  
+  //fourtht led 9 second delay  
+  digitalWrite (10, HIGH);
+  delay (7000); //  
+  digitalWrite (10, LOW);
+  
+  //fifth led 11 second delay  
+  digitalWrite (9, HIGH);
+  delay (11000);  
+  digitalWrite (9, LOW);
+  
+  //sixth led 13 second delay  
+  digitalWrite (8, HIGH);
+  delay (5000); 
+  digitalWrite (8, LOW);
+  
+}
